@@ -2,9 +2,9 @@
 using Android.Widget;
 using Android.OS;
 
-namespace MNO
+namespace mno
 {
-    [Activity(Label = "MNO", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(MainLauncher = true)]
     public class MainActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)
