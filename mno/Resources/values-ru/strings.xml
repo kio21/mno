@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- App name -->
+    <string name="app_name">Журнал МНО</string>
+
+    <!-- Menu item to open the Dashboard screen -->
+    <string name="nav_dashboard">Сводка</string>
+
+    <!-- Menu item to open the Settings screen -->
+    <string name="nav_settings">Настройки</string>
+
+    <!-- Menu item to open the About screen -->
+    <string name="nav_about">О программе</string>
+
+    <!-- Menu item to open the MNO screen -->
+    <string name="nav_mno">МНО</string>
+
+    <!-- Menu item to open the Warfarin screen -->
+    <string name="nav_warfarin">Варфарин</string>
+
+</resources>
