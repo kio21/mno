@@ -10,4 +10,5 @@
     <color name="icons">#FFFFFF</color>
     <color name="divider">#BDBDBD</color>
     <color name="dark_icon">#99000000</color>
+    <color name="navview_icon">#ff444444</color>
 </resources>
