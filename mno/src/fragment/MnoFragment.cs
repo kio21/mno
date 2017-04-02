@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Support.Design.Widget;
 
 namespace mno
 {
@@ -57,32 +58,7 @@ namespace mno
                     Place = "Консультант"
                 });
             }
-
-            /*var operations = DataManager<Operation>.Instance.GetEntries(s => s.UserId == app.CurrentUserId && s.Status != OperationStatus.Deleted && s.Status != OperationStatus.Synchronized).OrderByDescending(s => s.OperationDate);
-
-            foreach (var o in operations)
-            {
-                var employee = DataManager<Employee>.Instance.GetEntries(e => e.EmployeeId == o.EmployeeId).FirstOrDefault();
-                var workZone = DataManager<WorkZone>.Instance.GetEntries(e => e.WorkZoneGuid == o.WorkZoneGuid).FirstOrDefault().WorkZoneName;
-                var accessPoint = DataManager<AccessPoint>.Instance.GetEntries(e => e.AccessPointGuid == o.AccessPointGuid).FirstOrDefault().AccessPointName;
-                o.OperationDate = o.OperationDate.ToLocalTime();
-
-                displayedOperations.Add(new SynchronizationItem
-                {
-                    FullEmployeeName = employee?.FullName,
-                    //ToDo Search workZOne and access point
-                    WorkZoneName = workZone + ". " + accessPoint,//o.Description,
-                    OperationInfo = $"{o.OperationName} {GetText(Resource.String.register_text)} {o.OperationDate.ToString("yyyy.MM.dd HH:mm")}",
-                    OperationStatus = GetOperationStatus(o.Status),
-                    OperationColor = GetOperationColor(o.Status, view.Context),
-                    OperationStatusId = (int)o.Status,
-                    EmployeeHexCode = employee?.KeyCode,
-                    OperationName = o.OperationName,
-                    OperationDate = o.OperationDate.ToString(),
-                    OperationId = o.OperationId
-                });
-            }*/
-
+            
             if (mnoList != null)
             {
                 mnoListView.Adapter = new MnoAdapter(inflater, mnoList);
@@ -93,17 +69,29 @@ namespace mno
         {
             base.OnCreateView(inflater, container, savedInstanceState);
             inflater = inf;
+
             // HasOptionsMenu = true;
+
             view = inflater.Inflate(Resource.Layout.fragment_mno, null);
 
             mnoListView = view.FindViewById<ListView>(Resource.Id.mno_list_view);
 
+            // TODO
             // mnoListView.ItemClick += OnListItemClick;
 
-            var emptyView = view.FindViewById(Resource.Id.empty_mno_text);
+            View emptyView = view.FindViewById(Resource.Id.empty_mno_text);
             mnoListView.EmptyView = emptyView;
 
+            FloatingActionButton fabAddMno = view.FindViewById<FloatingActionButton>(Resource.Id.fab_add_mno);
+            fabAddMno.Click += FabAddMno_Click;
+
             return view;
+        }
+
+        private void FabAddMno_Click(object sender, EventArgs e)
+        {
+            // TODO
+            Console.WriteLine("FabAddMno_Click");
         }
     }
 }
