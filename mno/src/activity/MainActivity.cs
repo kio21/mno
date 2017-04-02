@@ -64,7 +64,7 @@ namespace mno
             // default first screen
             if (savedInstanceState == null)
             {
-                SelectMenuItem(Resource.Id.nav_dashboard);
+                SelectMenuItem(Resource.Id.nav_mno);
             }
         }
 

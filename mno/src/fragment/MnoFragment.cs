@@ -90,8 +90,8 @@ namespace mno
 
         private void FabAddMno_Click(object sender, EventArgs e)
         {
-            // TODO
-            Console.WriteLine("FabAddMno_Click");
+            var intent = new Intent(Context, typeof(AddMnoActivity));
+            StartActivity(intent);
         }
     }
 }

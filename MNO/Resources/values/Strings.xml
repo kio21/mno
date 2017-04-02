@@ -19,4 +19,10 @@
     <!-- Menu item to open the Warfarin screen -->
     <string name="nav_warfarin">Warfarin</string>
 
+    <!-- Text placed to empty mno list -->
+    <string name="empty_mno_text">No INR results.</string>
+
+    <!-- Title for add mno screen -->
+    <string name="title_add_mno">Adding INR</string>
+
 </resources>

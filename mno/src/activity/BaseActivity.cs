@@ -6,10 +6,21 @@ namespace mno
 {
     public abstract class BaseActivity : AppCompatActivity
     {
+        // reference to android Application instance
         protected MnoApp App { get; set; }
 
         // Toolbar
-        public Toolbar Toolbar { get; set; }
+        public Toolbar Toolbar
+        {
+            get;
+            set;
+        }
+
+        // LayoutResource
+        protected abstract int LayoutResource
+        {
+            get;
+        }
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -26,11 +37,6 @@ namespace mno
                 SupportActionBar.SetDisplayHomeAsUpEnabled(true);
                 SupportActionBar.SetHomeButtonEnabled(true);
             }
-        }
-        
-        protected abstract int LayoutResource
-        {
-            get;
         }
     }
 }

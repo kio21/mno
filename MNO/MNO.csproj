@@ -116,6 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\activity\BaseActivity.cs" />
+    <Compile Include="src\activity\AddMnoActivity.cs" />
     <Compile Include="src\activity\MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -139,6 +140,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\fragment_mno.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\activity_add_mno.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
