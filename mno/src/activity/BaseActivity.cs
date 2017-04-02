@@ -6,6 +6,7 @@ namespace mno
 {
     public abstract class BaseActivity : AppCompatActivity
     {
+        protected MnoApp App { get; set; }
 
         // Toolbar
         public Toolbar Toolbar { get; set; }
@@ -13,6 +14,8 @@ namespace mno
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+
+            App = (MnoApp)Application;
 
             SetContentView(LayoutResource);
 

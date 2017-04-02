@@ -34,6 +34,8 @@ namespace mno
         {
             base.OnCreate(savedInstanceState);
 
+            App.MainAct = this;
+
             drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
 
             SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.ic_hamburger);
@@ -90,8 +92,7 @@ namespace mno
                     break;
                 case Resource.Id.nav_mno:
                     Title = GetText(Resource.String.nav_mno);
-                    // TODO currentFragment = new MnoFragment();
-                    currentFragment = new Android.Support.V4.App.Fragment();
+                    currentFragment = new MnoFragment();
                     break;
                 case Resource.Id.nav_warfarin:
                     Title = GetText(Resource.String.nav_warfarin);

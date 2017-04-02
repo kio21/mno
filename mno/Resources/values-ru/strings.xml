@@ -19,4 +19,7 @@
     <!-- Menu item to open the Warfarin screen -->
     <string name="nav_warfarin">Варфарин</string>
 
+    <!-- Text placed to empty mno list -->
+    <string name="empty_mno_text">Значения МНО отсутствуют.</string>
+
 </resources>

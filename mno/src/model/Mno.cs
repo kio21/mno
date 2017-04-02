@@ -1,11 +1,12 @@
 using Realms;
 using System;
 
-namespace mno.src.model
+namespace mno
 {
     class Mno : RealmObject
     {
         // Id of record in db
+        [PrimaryKey]
         public int Id { get; set; }
 
         // Date of analysis
