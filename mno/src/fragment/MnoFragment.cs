@@ -79,7 +79,7 @@ namespace mno
             // TODO
             // mnoListView.ItemClick += OnListItemClick;
 
-            View emptyView = view.FindViewById(Resource.Id.empty_mno_text);
+            View emptyView = view.FindViewById(Resource.Id.empty_mno_layout);
             mnoListView.EmptyView = emptyView;
 
             FloatingActionButton fabAddMno = view.FindViewById<FloatingActionButton>(Resource.Id.fab_add_mno);

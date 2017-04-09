@@ -20,9 +20,9 @@
     <string name="nav_warfarin">Варфарин</string>
 
     <!-- Text placed to empty mno list -->
-    <string name="empty_mno_text">Значения МНО отсутствуют.</string>
+    <string name="empty_mno_text">Записи МНО отсутствуют.</string>
 
     <!-- Title for add mno screen -->
-    <string name="title_add_mno">Добавление МНО</string>
+    <string name="title_add_mno">Новая запись МНО</string>
 
 </resources>

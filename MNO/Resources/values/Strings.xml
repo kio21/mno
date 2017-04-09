@@ -20,9 +20,9 @@
     <string name="nav_warfarin">Warfarin</string>
 
     <!-- Text placed to empty mno list -->
-    <string name="empty_mno_text">No INR results.</string>
+    <string name="empty_mno_text">No INR records.</string>
 
     <!-- Title for add mno screen -->
-    <string name="title_add_mno">Adding INR</string>
+    <string name="title_add_mno">New INR record</string>
 
 </resources>
